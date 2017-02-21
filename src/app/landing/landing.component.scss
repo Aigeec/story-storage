@@ -20,6 +20,7 @@
       background-color: white;
       border-radius: 5px;
       width: 45%;
+      min-width: 60px;
       height: 35px;
       line-height: 35px;
       display: inline-block;
@@ -31,16 +32,28 @@
     }
   }
   .landing__left {
-    width: 35%
+    width: 5%
   }
   .landing__center {
-    width: 30%
+    width: 50%
   }
   .landing__right {
-    width: 35%;
+    width: 45%;
     text-align: center;
   }
+  @media (min-width: 768px) {
+    .landing__left {
+      width: 35%
+    }
+    .landing__center {
+      width: 30%
+    }
+    .landing__right {
+      width: 35%;
+      text-align: center;
+    }
+  }
   .landing__robot {
-    height: 400px;
+    width: 50%
   }
 }
